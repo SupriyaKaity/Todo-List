@@ -25,7 +25,7 @@ const TodoItem = ({
       >
         <button
           onClick={() => onToggle(todo.id)}
-          className={`shrink w-6 h-6 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110 active:scale-95 ${todo.completed ? "bg-linear-to-br from-emerald-400 to-teal-500 border-emrald-400 shadow-lg shadow-emerald-400/50" : "border-white/30 hover:border-violet-400 hover:bg-violet-500/20"}`}
+          className={`w-6 h-6 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110 active:scale-95 opacity-0 group-hover:opacity-100 ${todo.completed ? "bg-linear-to-br from-emerald-400 to-teal-500 border-emrald-400 shadow-lg shadow-emerald-400/50" : "border border-white/30 hover:border-violet-400 hover:bg-violet-500/20 "}`}
         >
           {todo.completed && (
             <Check size={14} className="text-white font-bold" />
